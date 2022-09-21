@@ -1,0 +1,16 @@
+.reference {
+    background : url(../images/reference.png) no-repeat fixed;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    .reference__para {
+        color: $white;
+        margin-top: 15px;
+        margin-bottom: 35px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+
+  
