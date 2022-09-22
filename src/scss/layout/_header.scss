@@ -1,0 +1,28 @@
+/*---------------------
+  Header
+-----------------------*/
+.header__top{
+    padding: 10px 0;
+    background-color: #000;
+
+    a {
+        text-align: right;
+        color: #fff;
+        font-size: 12px;
+        line-height: 12px;
+        text-decoration: none;
+      }
+      a::after {
+        content: "";
+        width: 1px;
+        height: 15px;
+        background-color: #4d4d4d;
+    }
+
+ .header_link {
+        color: #959595;
+      }
+  }
+  .header__top__right {
+    text-align: right;
+}

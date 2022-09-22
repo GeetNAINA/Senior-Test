@@ -1,0 +1,35 @@
+.navbar {
+    margin-top: 60px;
+
+    &.sticky {
+        margin-top: 0;
+        background: $black;
+    }
+}
+
+.active {
+    background-color: #3a8092;
+    border-radius: 15px;
+    color: $white;
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-item {
+            padding: 10px;
+        
+            &:hover {
+                background-color: #3a8092;
+                border-radius: 15px;
+                color: $white;
+            }
+        }
+
+        .nav-link {
+            font-size: 18px;
+            color: $white;
+            text-transform: capitalize;
+        }
+    }
+} 
+
