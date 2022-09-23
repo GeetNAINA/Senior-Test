@@ -1,12 +1,23 @@
 $colors: (
   white: #ffffff,
   black: #000000,
-  red: #ff0000
+  red: #ff0000,
+  pale-blue: #337689,
+  turquoise: #4ec1e0,
+  grey: #959595,
+  off-grey: #4d4d4d,
+  off-white: #e1e1e1
+
 );
 
 $size: ( 
   input-btn-radius: 35px,
   textarea-btn-radius: 10px
+);
+
+$transform-text: (
+  caps: capitalize,
+  upper: uppercase
 );
 
 $font-weight: (
@@ -19,12 +30,24 @@ $font-weight: (
   extra-bold: 800
 );
 
- 
+$caps: map-get($transform-text, caps);
+$upper: map-get($transform-text, upper);
+
+
 $input-btn-radius: map-get($size, input-btn-radius);
 $textarea-btn-radius: map-get($size, textarea-btn-radius);
 
 $white: map-get($colors, white);
 $black: map-get($colors, black);
 $red: map-get($colors, red);
+$pale-blue: map-get($colors, pale-blue);
+$turquoise: map-get($colors, turquoise);
+$grey: map-get($colors, grey);
+$off-grey: map-get($colors, off-grey);
+$off-white: map-get($colors, off-white);
+
+
+
+
 
 $regular: map-get($font-weight, regular);
