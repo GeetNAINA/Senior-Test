@@ -6,32 +6,35 @@
   background-size: cover;
   min-height: 100vh;
   border-bottom: 5px solid #4ec1e0;
- 
- }
 
- .triangle-down {
-  margin-left: 50%;
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 10px solid #4ec1e0;
 }
 
- .content-slider {
+.triangle-down {
+  margin-left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #4ec1e0;
+}
+
+.content-slider {
   margin-top: 200px;
- }
 
- .content-slider__title {
-  font-size: 72px;
-  line-height: 72px;
-  color: $white;
- }
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    color: $white;
 
- .content-slider__para {
-  font-size: 18px;
-  color: $white;
- }
- .content-slider__para {
-  margin-top: 30px;
- }
+    @include media-breakpoint-up(lg) {
+      font-size: 72px;
+      line-height: 72px;
+    }
+  }
+
+  &__para {
+    margin-top: 30px;
+    font-size: 18px;
+    color: $white;
+  }
+}

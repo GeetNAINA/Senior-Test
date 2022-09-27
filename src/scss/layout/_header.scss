@@ -1,28 +1,45 @@
 /*---------------------
   Header
 -----------------------*/
-.header__top{
-    padding: 10px 0;
-    background-color: #000;
-
-    a {
-        text-align: right;
-        color: #fff;
-        font-size: 12px;
-        line-height: 12px;
-        text-decoration: none;
-      }
-      a::after {
-        content: "";
-        width: 1px;
-        height: 15px;
-        background-color: #4d4d4d;
-    }
-
- .header_link {
-        color: #959595;
-      }
+.header {
+  &__top {
+    height: 33px;
+    background-color: $black;
   }
-  .header__top__right {
-    text-align: right;
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 33px;
+  } 
+
+  .link {
+    color: #959595;
+    font-size: 12px;
+    line-height: 30px;
+    text-decoration: none;
+    border-right: 1px solid #4d4d4d;
+    margin-right: 10px;
+    height: 31px;
+
+    &:after {
+      content: "";
+      width: 1px;
+      margin-left: 10px;
+    
+    }
+  }
+
+  .tel{
+    color: $white;
+    border-left: 1px solid #4d4d4d;
+    
+    .fa {
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 10px;
+    }
+  }
 }
+

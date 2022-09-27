@@ -7,13 +7,9 @@
 @import '../custom-bootstrap/mixins';
 @import '../custom-bootstrap/reboot';
 @import '../custom-bootstrap/navbar';
-@import '../custom-bootstrap/grid';
-@import '../custom-bootstrap/containers';
-@import '../custom-bootstrap/bootstrap';
+
+@import '../custom-bootstrap/bootstrap-grid.scss';
 @import '../custom-bootstrap/card';
-
-
-
 
 @import 'helpers/responsive';
 @import 'helpers/generated-sprite';
@@ -26,7 +22,6 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/animations';
-
 
 /* Components */
 @import 'components/bootstrap-override';

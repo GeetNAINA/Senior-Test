@@ -1,4 +1,4 @@
-h1 {
+h1,.heading-h1 {
   margin: 0 0 30px;
   @include font-size-custom(37.5px);
   font-weight: $regular;
@@ -10,17 +10,16 @@ h1 {
   }
 }
 
-h2 {
+h2, .heading-h2 {
   margin: 0;
 
   @include media-breakpoint-up(lg) {
     @include font-size-custom(65px);
     line-height: 75px;
   }
-
 }
 
-h3 {
+h3, .heading-h3 {
   margin: 0;
 
   @include media-breakpoint-up(lg) {
@@ -29,7 +28,7 @@ h3 {
   }
 }
 
-h4 {
+h4,.heading-h4 {
   margin: 0;
 
   @include media-breakpoint-up(lg) {
