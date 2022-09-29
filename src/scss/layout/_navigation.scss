@@ -1,36 +1,69 @@
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
+    z-index: 1;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 100px;
+    
+
+    @include media-breakpoint-up(lg) {
+        top: 80px;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .navbar__list {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       display: none;
+       
+        .showing & {
+            top: 33px;
+            left: 0;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            display: inline-block;
+            background: $black;
+            padding-top: 25px;
+           transition: 0.5s;
+
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
         .nav-item {
-            position: relative;
             list-style: none;
-            &:hover {
-                background-color: #3a8092;
-                border-radius: 15px;
-                padding: 10px;
-                color: $white;
-            }
 
+            @include media-breakpoint-up(lg) {
+
+            }
             .nav-link {
-                position: relative;
-                margin: 0 15px;
+                margin: 0 10px;
                 text-decoration: none;
                 font-size: 18px;
                 color: $white;
                 text-transform: capitalize;
+
+                &::after {
+                    display: none;
+
+                }
+
+                &:hover {
+                    background-color: #3a8092;
+                    border-radius: 15px;
+                    padding: 5px;
+                    color: $white;
+                    @include media-breakpoint-up(lg) {
+                        background-color: #3a8092;
+                        border-radius: 15px;
+                        padding: 10px;
+                        color: $white;
+                    }
+                }
 
             }
         }
@@ -38,8 +71,30 @@ nav {
 
 }
 
+.active {
+    color: $white;
 
+    @include media-breakpoint-up(lg) {
+        background-color: #3a8092;
+        border-radius: 15px;
+        padding: 10px;
+        color: $white;
+    }
+}
 
+.icon-bar {
+    display: block;
+    position: absolute;
+    color: #4cc0e0;
+    right: 10px;
+    top: 10px;
+    font-size: 1.9em;
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+
+    }
+}
 
 // .navbar {
 //     margin-top: 60px;

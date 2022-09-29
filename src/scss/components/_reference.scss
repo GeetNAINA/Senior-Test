@@ -1,27 +1,40 @@
 .reference {
+   
     .reference__para {
+        position: absolute;
         color: $white;
-        margin-top: 15px;
-        margin-bottom: 35px;
+        margin-top: 35px;
+
+        margin-bottom: 30px;
         font-size: 16px;
         line-height: 16px;
-
     }
 }
-
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.6;
+    background-color:#01567d ;
+}
 .reference__background {
     position: absolute;
-    margin-bottom: 80px;
+    background-size: cover;
+    
 
-    .reference__background::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: $overlay;
-        opacity: .7;
+   
+}
+.card{
+    margin-top: 150px;
+    margin-bottom: 60px;
+    &-img-top {
+        width:100%;
+        @include media-breakpoint-up(lg) {
+            width: 100%;
+            height: 20rem;
+        }
     }
 }
 

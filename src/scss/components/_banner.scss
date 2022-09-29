@@ -2,11 +2,17 @@
   Banner
 -----------------------*/
 .banner-image {
-  background-image: url('../images/banner-img.png');
-  background-size: cover;
-  min-height: 100vh;
   border-bottom: 5px solid #4ec1e0;
+  position: relative;
 
+  &__content {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
 }
 
 .triangle-down {
@@ -19,11 +25,17 @@
 }
 
 .content-slider {
-  margin-top: 200px;
+  top: 0;
+  margin-top: 60px;
+
+  @include media-breakpoint-up(lg) {
+    top: 0;
+    margin-top: 150px;
+  }
 
   &__title {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 25px;
     color: $white;
 
     @include media-breakpoint-up(lg) {
@@ -33,8 +45,16 @@
   }
 
   &__para {
-    margin-top: 30px;
-    font-size: 18px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 14px;
     color: $white;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 25px;
+      color: $white;
+    }
   }
 }

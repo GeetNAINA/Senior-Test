@@ -22,6 +22,8 @@
     border-right: 1px solid #4d4d4d;
     margin-right: 10px;
     height: 31px;
+    display: flex;
+    align-items: center;
 
     &:after {
       content: "";
@@ -38,7 +40,8 @@
     .fa {
       font-size: 20px;
       line-height: 20px;
-      margin-left: 10px;
+      margin-right: 10px;
+      margin-left: 20px;
     }
   }
 }
