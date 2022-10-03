@@ -1,6 +1,13 @@
 .latest-news {
     background: #0b1a26;
-    position: relative;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: fill;
+        }
+        picture {
+            height: 100%;
+        }
 .link {
     margin-top: 40px;
     font-size: 14px;
@@ -31,3 +38,37 @@
 
     }
 }
+
+/* .latest-news {
+    position: relative;
+    background: #0b1a26;
+.link {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+
+    a {
+    text-decoration: none;
+    color: $turquoise;
+    }
+
+}
+    .text {
+        margin-top: 80px;
+        margin-bottom: 66px;
+    }
+
+    h3 {
+        font-size: 30.47px;
+        color: $turquoise;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $grey;
+        font-size: 13.45px;
+        line-height: 20px;
+        font-weight: $regular;
+
+    }
+} */

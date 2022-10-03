@@ -1,15 +1,29 @@
 nav {
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 4;
     width: 100%;
-    
 
+    &.sticky{
+        padding: 15px 100px;
+        background: $black;
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
     @include media-breakpoint-up(lg) {
         top: 80px;
         left: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .nav-logo {
+        display: none;
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
     }
 
     .navbar__list {

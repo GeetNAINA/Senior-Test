@@ -1,9 +1,98 @@
 /*---------------------
   Banner
 -----------------------*/
+/*---------------------
+  Banner
+-----------------------*/
 .banner-image {
   border-bottom: 5px solid #4ec1e0;
   position: relative;
+  img {
+     min-width: 100%;
+     min-height: 100%;
+     object-fit: cover;
+     max-width: 100%;
+
+ }
+ picture {
+  max-height: 100%
+} 
+
+  &__content {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    @include media-breakpoint-up(md) {
+      top: 50px;
+    }
+    @include media-breakpoint-up(lg) {
+      top: 160px;
+    }
+
+  }
+}
+
+.triangle-down {
+  margin-left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #4ec1e0;
+}
+
+.content-slider {
+  &__title {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    color: $white;
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 72px;
+      line-height: 72px;
+    }
+
+  }
+
+  &__para {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: $white;
+    @include media-breakpoint-up(md) {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+  }
+}
+
+
+
+/* 
+.banner-image {
+  border-bottom: 5px solid #4ec1e0;
+  img {
+     min-width: 100%;
+     min-height: 100%;
+     max-width: inherit;
+     object-fit: cover;
+ }
+ picture {
+  height: 100%
+} 
 
   &__content {
     position: absolute;
@@ -57,4 +146,4 @@
       color: $white;
     }
   }
-}
+} */

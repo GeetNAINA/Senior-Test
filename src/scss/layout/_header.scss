@@ -2,10 +2,9 @@
   Header
 -----------------------*/
 .header {
-  &__top {
-    height: 33px;
-    background-color: $black;
-  }
+  width: 100%;
+  background-color: $black;
+  height: 33px;
 
   &__list {
     display: flex;
@@ -15,11 +14,11 @@
   } 
 
   .link {
-    color: #959595;
+    color: $grey;
     font-size: 12px;
     line-height: 30px;
     text-decoration: none;
-    border-right: 1px solid #4d4d4d;
+    border-right: 1px solid $off-grey;
     margin-right: 10px;
     height: 31px;
     display: flex;
@@ -35,13 +34,18 @@
 
   .tel{
     color: $white;
-    border-left: 1px solid #4d4d4d;
+    border-left: 1px solid $off-grey;
     
-    .fa {
-      font-size: 20px;
-      line-height: 20px;
-      margin-right: 10px;
+    .icon {
+      font-size: 14px;
+      line-height: 14px;
       margin-left: 20px;
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+        line-height: 20px;
+        margin-right: 10px;
+        margin-left: 20px;
+      }
     }
   }
 }

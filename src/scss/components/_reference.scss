@@ -1,10 +1,176 @@
-.reference {
-   
-    .reference__para {
-        position: absolute;
-        color: $white;
-        margin-top: 35px;
 
+.reference {
+    position: relative;
+    
+    &__card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+    }
+
+    &__background {
+        background-size: cover;
+
+
+    img {
+        min-height: 100%;
+        min-width: 100%;
+        max-width: inherit;
+        object-fit: cover;
+         }
+
+}
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0.6;
+    min-height: 100%;
+    min-width: 100%;
+    background-color:#01567d ;
+   }
+.reference__content {
+    padding-top: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+}  
+.reference__title {
+    font-weight: $bold;
+    color: $white;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.reference__para {
+           color: $white;
+           margin-top: 15px;
+           margin-bottom: 30px;
+           font-size: 16px;
+           line-height: 16px;
+       }
+
+.card {
+    background-color: $white;
+    width: 325px;
+    min-height: 385px;
+    margin: 25px;
+
+    &:hover {
+        background-color: rgb(62,62,62);
+        color: $white;
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: all 1s ease;
+    }
+    
+    &-title {
+        font-size: 20.31px;
+        font-weight: $regular;
+        color: #4ec1e0;
+        padding: 10px;
+
+    }
+    &-text {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+.card-image {
+    margin-bottom: 15px;
+    background-size: cover;
+    height: 235px;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        }
+       picture {
+       height: 100%
+       }
+}
+      
+ }
+
+
+
+//     position: relative;
+//     .ref {
+//     padding-top: 50px;
+//     }
+//     .reference__para {
+//         color: $white;
+//         margin-top: 15px;
+//         margin-bottom: 30px;
+//         font-size: 16px;
+//         line-height: 16px;
+//     }
+// }
+// .overlay{
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     right:0;
+//     bottom:0;
+//     opacity:0.6;
+//     min-width: 100%;
+//     min-height: 100%;
+//     background-color:#01567d ;
+// }
+// .reference__background {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     bottom: 0;
+//     img {
+//         min-width: 100%;
+//         min-height: 100%;
+//         object-fit: cover;
+//         max-width: 100%;
+//         }
+//         picture {
+//         max-height: 100%
+//         }
+
+// }
+// .card{
+//     margin-top: 60px;
+//     &-img-top {
+//         width:100%;
+//         height: 100px;
+//         @include media-breakpoint-up(lg) {
+//             display: block;
+//             width: 100%;
+//             height: 15rem;
+//         }
+//     }
+// }
+
+// .card-title {
+//     font-size: 20.31px;
+//     font-weight: $regular;
+//     color: #4ec1e0;
+// }
+
+/* .reference {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    .ref {
+    padding-top: 50px;
+    }
+    .reference__para {
+        color: $white;
+        margin-top: 15px;
         margin-bottom: 30px;
         font-size: 16px;
         line-height: 16px;
@@ -17,23 +183,47 @@
     right:0;
     bottom:0;
     opacity:0.6;
+    min-width: 100%;
+    min-height: 100%;
     background-color:#01567d ;
 }
 .reference__background {
     position: absolute;
     background-size: cover;
-    
-
-   
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    img {
+        min-width: 100%;
+        min-height: 100%;
+        max-width: inherit;
+        object-fit: cover;
+        }
+        picture {
+        height: 100%
+        }
+    .reference__background::after {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: $overlay;
+        opacity: .7;
+    }
 }
 .card{
-    margin-top: 150px;
-    margin-bottom: 60px;
+    margin-top: 60px;
     &-img-top {
         width:100%;
+        height: 100px;
         @include media-breakpoint-up(lg) {
+            display: block;
             width: 100%;
-            height: 20rem;
+            height: 15rem;
         }
     }
 }
@@ -42,4 +232,4 @@
     font-size: 20.31px;
     font-weight: $regular;
     color: #4ec1e0;
-}
+} */
