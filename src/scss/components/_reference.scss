@@ -1,6 +1,7 @@
 
 .reference {
     position: relative;
+    overflow: hidden;
     
     &__card {
         display: flex;
@@ -11,8 +12,11 @@
     }
 
     &__background {
-        background-size: cover;
-
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
 
     img {
         min-height: 100%;
@@ -21,6 +25,9 @@
         object-fit: cover;
          }
 
+picture {
+    height: 100%;
+}
 }
 .overlay {
     position: absolute;
@@ -35,11 +42,11 @@
    }
 .reference__content {
     padding-top: 50px;
-    position: absolute;
-    top: 0px;
+    position: relative;
+    top: 0;
     left: 0;
     bottom: 0;
-    right: 0;    
+    right: 0;   
 }  
 .reference__title {
     font-weight: $bold;
