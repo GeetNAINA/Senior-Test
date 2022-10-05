@@ -2,37 +2,44 @@ nav {
     position: fixed;
     z-index: 4;
     width: 100%;
+    top: 0;
+    left: 0;
+    .nav-content {
+        margin-top: 60px;
+    }
 
     &.sticky{
-        padding: 25px 100px;
         background: $black;
         z-index: 4;
         position: fixed;
         top: 0;
         left: 0;
+        .nav-logo {
+         padding: 0 20px 10px 50px;
+        }
 
     }
     @include media-breakpoint-up(lg) {
-        top: 80px;
         left: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .nav-logo {
-        display: none;
-        @include media-breakpoint-up(lg) {
-            display: block;
-        }
-    }
+
 
     .navbar__list {
        display: none;
-       
+
+       @include media-breakpoint-up(lg) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    } 
         .showing & {
             top: 33px;
             left: 0;
             align-items: center;
+            text-align: center;
             position: fixed;
             width: 100%;
             display: inline-block;
@@ -42,11 +49,7 @@ nav {
 
         }
 
-        @include media-breakpoint-up(lg) {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
+
 
         .nav-item {
             list-style: none;
@@ -84,7 +87,6 @@ nav {
     }
 
 }
-
 .active {
     color: $white;
 
@@ -95,15 +97,13 @@ nav {
         color: $white;
     }
 }
-
 .icon-bar {
-    display: block;
     position: absolute;
-    color: #4cc0e0;
-    right: 10px;
-    top: 10px;
+    color: $turquoise;
     font-size: 1.9em;
-
+    top: 0;
+    margin-top: 60px;
+    right: 50px;
     @include media-breakpoint-up(lg) {
         display: none;
 

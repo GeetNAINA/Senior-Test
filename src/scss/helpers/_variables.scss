@@ -5,6 +5,7 @@ $colors: (
   pale-blue: #337689,
   turquoise: #4ec1e0,
   grey: #959595,
+  blacky: #161b1d,
   off-grey: #4d4d4d,
   off-white: #e1e1e1,
   overlay: #01567d
@@ -46,6 +47,7 @@ $overlay: map-get($colors, overlay);
 $grey: map-get($colors, grey);
 $off-grey: map-get($colors, off-grey);
 $off-white: map-get($colors, off-white);
+$blacky: map-get($colors, blacky);
 
 $regular: map-get($font-weight, regular);
 $bold: map-get($font-weight, bold);

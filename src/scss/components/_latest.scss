@@ -20,9 +20,16 @@
 
 }
     .text {
-        margin-top: 80px;
+        padding: 10px;
+        @include media-breakpoint-up(lg) {
+        padding-right: 150px;
+        padding-left: 30px;
         margin-bottom: 66px;
+        margin-top: 80px;
+
+
     }
+}
 
     h3 {
         font-size: 30.47px;
