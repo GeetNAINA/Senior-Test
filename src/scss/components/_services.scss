@@ -39,7 +39,8 @@
     .services-item__desc {
         margin-top: 22px;
         font-size: 14px;
-        line-height: 14px;
+        align-items: center;
+        line-height: 20px;
     }
     .services-item__link {
          margin-top: 30px;
@@ -84,11 +85,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 0 15px;
+    padding: 5px 5px;
 
     @include media-breakpoint-up(lg) {
-        width: 230px;
-        height: 230px;
+        width: 260px;
+        height: 260px;
     }
     //     border: 1px solid $turquoise;
 //     // margin: 10% auto;
