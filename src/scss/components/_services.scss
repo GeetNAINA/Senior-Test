@@ -19,8 +19,11 @@
     .services-item__title {
         font-size: 18px;
         line-height: 18px;
+        color: #3a3937;
         font-weight: $bold;
-        margin-top: 25px;
+        margin-bottom: 30px;
+
+        // margin-top: 25px;
     }
 
     .service__para {
@@ -37,13 +40,14 @@
 
     
     .services-item__desc {
-        margin-top: 22px;
         font-size: 14px;
+        color: #3a3937;
         align-items: center;
         line-height: 20px;
+        margin-bottom: 30px;
+
     }
     .services-item__link {
-         margin-top: 30px;
         a{
             text-decoration: none;
             color: $turquoise;
@@ -74,7 +78,7 @@
 
 .services-circle {
     border: 1px solid $turquoise;
-    margin: 10% auto;
+    margin: 20% auto;
     width: 260px;
     height: 260px;
     border-radius: 50%;
@@ -87,10 +91,6 @@
     position: relative;
     padding: 5px 5px;
 
-    @include media-breakpoint-up(lg) {
-        width: 260px;
-        height: 260px;
-    }
     //     border: 1px solid $turquoise;
 //     // margin: 10% auto;
 //   margin-right: 100px;
@@ -98,4 +98,8 @@
 //     height: 250px;
 //     border-radius: 50%;
 //     position: relative;
+}
+.arrow {
+    color: $black;
+    font-size: 10px;
 }

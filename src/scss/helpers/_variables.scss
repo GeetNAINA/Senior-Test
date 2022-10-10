@@ -8,8 +8,9 @@ $colors: (
   blacky: #161b1d,
   off-grey: #4d4d4d,
   off-white: #e1e1e1,
-  overlay: #01567d
-
+  overlay: #01567d,
+  textbox-border: #c7c5c1,
+  shadow: #1e2d2b
 );
 
 $size: ( 
@@ -48,9 +49,15 @@ $grey: map-get($colors, grey);
 $off-grey: map-get($colors, off-grey);
 $off-white: map-get($colors, off-white);
 $blacky: map-get($colors, blacky);
+$textbox-border: map-get($colors, textbox-border);
+$shadow: map-get($colors, shadow);
+
+
 
 $regular: map-get($font-weight, regular);
 $bold: map-get($font-weight, bold);
 
 
 $Open-sans: 'Open Sans';
+$Gothic-Regular: 'Gothic-Regular';
+$Gothic-Bold: 'Gothic-Bold';

@@ -1,9 +1,6 @@
 /*---------------------
   Banner
 -----------------------*/
-/*---------------------
-  Banner
------------------------*/
 .banner-image {
   position: relative;
 
@@ -13,8 +10,9 @@
     min-height: 100%;
     object-fit: cover;
     max-width: 100%;
+
     @include media-breakpoint-up(md) {
-height: auto;
+      height: auto;
     }
   }
 
@@ -22,6 +20,17 @@ height: auto;
     max-height: 100%
   }
 
+  .overlay-banner{
+    opacity: .4;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: $black;
+  }
   &__content {
     position: absolute;
     top: 70px;
@@ -38,39 +47,60 @@ height: auto;
   }
 }
 
+.banner-image__content{
+  .container,
+    .row {
 
+      @include media-breakpoint-up(lg) {
+        height: 100%;
+      }
+    }
+}
 .content-slider {
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
   &__title {
     font-size: 25px;
-    line-height: 25px;
+    font-family: $Gothic-Regular;
+    text-shadow: 2px 4px $shadow;
+    line-height: 35px;
     color: $white;
 
     @include media-breakpoint-up(md) {
       font-size: 40px;
-      line-height: 40px;
+      line-height: 60px;
     }
 
     @include media-breakpoint-up(lg) {
-      font-size: 72px;
-      line-height: 72px;
+      font-size: 70px;
+      line-height: 80px;
+
     }
 
   }
 
   &__para {
-    margin-top: 10px;
+    // margin-top: 10px;
     font-size: 14px;
     line-height: 14px;
     color: $white;
 
     @include media-breakpoint-up(md) {
-      margin-top: 20px;
+      // margin-top: 20px;
       font-size: 18px;
       line-height: 20px;
     }
 
     @include media-breakpoint-up(lg) {
-      margin-top: 20px;
+      // margin-top: 20px;
       font-size: 18px;
       line-height: 25px;
     }

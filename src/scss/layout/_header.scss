@@ -4,14 +4,18 @@
 .header {
   width: 100%;
   background-color: $black;
-  height: 33px;
-
   &__list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 33px;
   } 
+  
+  .header-link{
+    list-style: none;
+    z-index: 5;
+
+  }
 
   .link {
     color: $grey;
@@ -28,13 +32,21 @@
       content: "";
       width: 1px;
       margin-left: 10px;
-    
     }
+
+    &:hover {
+      color: $turquoise;
+    }
+
   }
 
   .tel{
     color: $white;
     border-left: 1px solid $off-grey;
+
+    &:hover {
+      color: $off-white;
+    }
     
     .icon {
       font-size: 14px;
