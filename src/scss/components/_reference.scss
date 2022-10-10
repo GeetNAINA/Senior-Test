@@ -78,21 +78,21 @@ picture {
         transition: all 1s ease;
     }
     
-    &-title {
+    &__title {
         font-size: 20.31px;
         font-weight: $regular;
         color: $turquoise;
         margin-left: 10px;
 
     }
-    &-text {
+    &__text {
         font-size: 16px;
         color: #3a3937;
         margin-left: 10px;
 
     }
 }
-.card-image {
+.card__image {
     margin-bottom: 15px;
     background-size: cover;
     height: 235px;

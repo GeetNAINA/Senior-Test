@@ -50,7 +50,6 @@
 .banner-image__content{
   .container,
     .row {
-
       @include media-breakpoint-up(lg) {
         height: 100%;
       }
@@ -69,7 +68,7 @@
 
   &__title {
     font-size: 25px;
-    font-family: $Gothic-Regular;
+    font-family: $Gothic;
     text-shadow: 2px 4px $shadow;
     line-height: 35px;
     color: $white;
@@ -108,71 +107,3 @@
   }
 }
 
-
-
-/* 
-.banner-image {
-  border-bottom: 5px solid #4ec1e0;
-  img {
-     min-width: 100%;
-     min-height: 100%;
-     max-width: inherit;
-     object-fit: cover;
- }
- picture {
-  height: 100%
-} 
-
-  &__content {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-
-  }
-}
-
-.triangle-down {
-  margin-left: 50%;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 10px solid #4ec1e0;
-}
-
-.content-slider {
-  top: 0;
-  margin-top: 60px;
-
-  @include media-breakpoint-up(lg) {
-    top: 0;
-    margin-top: 150px;
-  }
-
-  &__title {
-    font-size: 25px;
-    line-height: 25px;
-    color: $white;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 72px;
-      line-height: 72px;
-    }
-  }
-
-  &__para {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 14px;
-    color: $white;
-
-    @include media-breakpoint-up(lg) {
-      margin-top: 20px;
-      font-size: 18px;
-      line-height: 25px;
-      color: $white;
-    }
-  }
-} */
