@@ -10,6 +10,10 @@ $(document).ready(function () {
   $(".icon-bar").click(function () {
     $("body").toggleClass("showing");
   });
+
+  $(".icon-close").click(function () {
+    $("body").removeClass("showing");
+  });
 });
 
 window.addEventListener("scroll", function () {

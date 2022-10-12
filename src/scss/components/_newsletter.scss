@@ -2,16 +2,7 @@
   padding-top: 55px;
   padding-bottom: 100px;
   background: $off-white;
-
-  .newletter__title {
-      font-size: 30px;
-      letter-spacing: 3px;
-      line-height: 30px;
-      font-weight: $bold;
-      font-family: $Gothic-Regular;
-      color: #0b1a26;
-
-  }
+  
   .news__desc {
       font-size: 16px;
       line-height: 16px;
@@ -19,29 +10,17 @@
       margin-bottom: 30px;
   }
 }
-.button {
-margin-top: 30px;
-.btn {
-  border: none;
-  border-radius: 0;
-  text-decoration: none;
-  padding: 11px 50px;
-
-}
-.btn-success {
-  padding: 14px 75px;
-  font-size: 14px;
-  line-height: 14px;
-  color: $white;
-  border-radius: 10px;
-  background-color: #7fb618;
-}
-
-}
-
 
 .custom {
   max-width: 780px;
+}
+
+.form-item {
+  margin-bottom: 15px;
+
+  &:nth-of-type(2) {
+    margin-bottom: 30px;
+  }
 }
 
 input {
@@ -50,10 +29,9 @@ input {
   border: 1px solid $textbox-border;
   font-size: 14px;
   color: $off-grey;
-  margin-bottom: 16px;
 
   &::placeholder {
-    color: #4d4d4d;
+    color: $off-grey;
   }
 }
 

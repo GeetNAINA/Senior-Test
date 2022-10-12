@@ -10,7 +10,9 @@ $colors: (
   off-white: #e1e1e1,
   overlay: #01567d,
   textbox-border: #c7c5c1,
-  shadow: #1e2d2b
+  shadow: #1e2d2b,
+  envoyer: #7fb618,
+  darkblue: #0b1a26
 );
 
 $size: ( 
@@ -51,6 +53,10 @@ $off-white: map-get($colors, off-white);
 $blacky: map-get($colors, blacky);
 $textbox-border: map-get($colors, textbox-border);
 $shadow: map-get($colors, shadow);
+$envoyer: map-get($colors, envoyer);
+$darkblue: map-get($colors, darkblue);
+
+
 
 
 

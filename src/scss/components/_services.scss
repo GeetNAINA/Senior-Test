@@ -78,7 +78,7 @@
 
 .services-circle {
     border: 1px solid $turquoise;
-    margin: 20% auto;
+    // margin: 10% auto;
     width: 260px;
     height: 260px;
     border-radius: 50%;
@@ -91,13 +91,10 @@
     position: relative;
     padding: 5px 5px;
 
-    //     border: 1px solid $turquoise;
-//     // margin: 10% auto;
-//   margin-right: 100px;
-//     width: 250px;
-//     height: 250px;
-//     border-radius: 50%;
-//     position: relative;
+    @include media-breakpoint-up(lg) {
+
+    }
+
 }
 .arrow {
     color: $black;

@@ -8,6 +8,7 @@
 @import '../custom-bootstrap/navbar';
 @import '../custom-bootstrap/bootstrap-grid.scss';
 @import '../custom-bootstrap/card';
+@import '../custom-bootstrap/buttons';
 
 @import 'helpers/responsive';
 @import 'helpers/generated-sprite';
@@ -21,6 +22,7 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/animations';
+@import 'base/color';
 
 /* Components */
 @import 'components/bootstrap-override';

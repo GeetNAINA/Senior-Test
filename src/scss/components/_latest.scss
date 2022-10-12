@@ -1,5 +1,9 @@
 .latest-news {
-    background: #0b1a26;
+    background: $darkblue;
+    
+    &__container {
+        padding: 75px 5px 60px 20px;
+    }
 
     img {
         min-width: 100%;
@@ -11,11 +15,10 @@
         height: 100%;
     }
 
-    .link {
+.latest-link {
         margin-top: 40px;
         font-size: 14px;
         font-weight: bold;
-
         a {
             text-decoration: none;
             color: $turquoise;
@@ -23,16 +26,14 @@
 
     }
 
-    .customize {
-        padding-left: 20px;
-        padding-top: 75px;
-        padding-bottom: 60px;
-        padding-right: 5px;
-    }
+
 
     h3 {
         font-size: 30.47px;
+        line-height: 30.47px;
         color: $turquoise;
+        font-weight: $regular;
+        font-family: $Gothic;
         margin-bottom: 20px;
     }
 
